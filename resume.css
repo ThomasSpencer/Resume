@@ -1,0 +1,250 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+-------------
+Header Design
+-------------
+*/
+
+header {
+	height: 200px;
+	background-color: #0C6375;
+	border-radius: 5px;
+	position: relative;
+}
+
+.title {
+	display: inline-block;
+	text-align: left;
+	position: absolute;
+	left: 20px;
+	top: 70%;
+}
+
+.address {
+	display: inline-block;
+	text-align: right;
+	position: absolute;
+	right: 20px;
+	top: 25%;
+}
+
+/*
+------------
+Body Design
+------------
+*/
+
+.center-align {
+	display: table;
+	width: 80%;
+	align-self: center;
+	margin: 0 8%;
+
+}
+
+.center-align::after {
+	clear: both;
+}
+
+.section-title {
+	float: left;
+	width: 25%;
+	margin: 2% 3% ;
+}
+
+.section-content {
+	float: right;
+	width: 60%;
+	margin: 2% 3%;
+}
+
+ul li {
+	list-style: circle outside;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+ul li li {
+	list-style-type: disc;
+}
+
+div.section-content p {
+	margin-bottom: 3px;
+	margin-left: 10px;
+	text-indent: 20px;
+}
+
+#extra-education {
+	margin-top: 20px;
+}
+
+h4 #timeline {
+	text-align: left;
+	font-style: italic;
+	font-weight: normal;
+}
+
+
+/*
+-----------------
+Footer Design
+-----------------
+*/
+
+footer {
+	height: 100px;
+	background-color: #0C6375;
+	border-radius: 5px;
+}
+
+footer h4 {
+	float: left;
+	width: 65%;
+	margin-top: 40px;
+}
+
+.links {
+	float: right;
+	width: 30%;
+	margin-top: 40px;
+}
+
+footer a {
+	display: inline-block;;
+	text-align: center;
+	margin: 0 20px;
+}
+
+/*
+------------
+Font
+------------
+*/
+
+.title,
+.address,
+footer {
+	font-family: 'Titillium Web', sans-serif;
+	color: #f9f5e1;
+}
+
+.title,
+.address {
+	margin-bottom: 15%;
+}
+
+.title {
+	font-size: 48px;
+}
+
+.address {
+	font-size: 36px;
+}
+
+.section-title {
+	font-family: 'Oswald', sans-serif;
+	font-size: 48px;
+	text-align: right;
+	font-weight: 300;
+	color: #515B6F;
+}
+
+.section-content h4 {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.section-content {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	color: #AA6C4E;
+}
+
+p.section-content {
+	font-size: 20px;
+}
+
+footer h4,
+footer a {
+	font-size: 18px;
+}
+
+footer a {
+	color: #f9f5e1;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #515B6F;
+}
+/*
+-----------------
+Background/Visuals
+-----------------
+*/
+
+article {
+	background: #f9f5e1;
+	background: -moz-linear-gradient(left, #f9f5e1 0%, #caaa8e 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, #f9f5e1), color-stop(100%, #caaa8e));
+	background: -webkit-linear-gradient(left, #f9f5e1 0%, #caaa8e 100%);
+	background: -o-linear-gradient(left, #f9f5e1 0%, #caaa8e 100%);
+	background: -ms-linear-gradient(left, #f9f5e1 0%, #caaa8e 100%);
+	background: linear-gradient(to right, #f9f5e1 0%, #caaa8e 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f5e1', endColorstr='#caaa8e', GradientType=1 );
+}
+
+header,
+footer {
+	background-color: #735945;
+}
